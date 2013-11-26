@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>delay demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+ 
+<a style="display: none" href="#" id="my_link">linkje</a> 
+<p>another element will appear above after 10 seconds</p>
+<p id="status">waiting</p>
+<script>
+
+$(document).ready(function () {
+	$("#my_link").delay(10 * 1000).show(0);
+});
+
+$( "#my_link" ).click(function() {
+	$("#status").text("link was clicked");
+});
+</script>
+ 
+</body>
+</html>
