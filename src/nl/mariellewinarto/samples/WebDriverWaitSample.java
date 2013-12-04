@@ -22,6 +22,7 @@ public class WebDriverWaitSample {
 		WebDriverWait wait = new WebDriverWait(driver, 20, 2000);
 		WebElement link = wait.until(ExpectedConditions.elementToBeClickable(By.id("my_link")));
 		link.click();
+		
 	}
 
 }
